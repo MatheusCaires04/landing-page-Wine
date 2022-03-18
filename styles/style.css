@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,4 +7,279 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+}
+
+:root {
+    --color-white: #fff;
+    --color-footer: #e5e5e5;
+    --color--bg: #f5f5f5;
+    --color-black: #000;
+    --color-pink: #a82472;
+    --color-pink-hover: #e43fa0;
+    --font-size: 16px;
+    --font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: var(--color--bg);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    background-color: var(--color-white);
+    border-bottom: 0.5px solid var(--color-black);
+}
+
+.navbar {
+    max-width: 1150px;
+    width: 90%;
+    height: 55px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo-wine {
+    width: 100px;
+    height: 36px;
+    filter: invert(100%) sepia(0) saturate(100%) hue-rotate(80deg) brightness(95%) contrast(90%);
+}
+
+.logo-security-site {
+    width: 130px;
+    height: 30px;
+}
+
+.content {
+    max-width: 1150px;
+    width: 90%;
+    height: calc(100vh - 100px);
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.content-signin {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.content-signin h1 {
+    width: 80%;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.content-signin .span-one {
+    font-size: 0.9rem;
+    margin: 30px 0 0 0;
+}
+
+.form-signin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 7px;
+}
+
+.form-group input {
+    font-size: 1rem;
+    padding: 8px 10px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.form-signin .forget-password-link {
+    font-size: 0.8rem;
+    color: var(--color-pink);
+    margin: 0 0 20px 0;
+    text-decoration: underline;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.form-signin .forget-password-link:hover {
+    text-decoration: none;
+}
+
+.form-signin button {
+    width: 100%;
+    font-size: 1.1rem;
+    border: 1px solid var(--color-pink);
+    border-radius: 5px;
+    padding: 10px 0;
+    margin: 0 0 20px 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.form-signin .btn-signin {
+    color: var(--color-white);
+    background-color: var(--color-pink);
+}
+
+.form-signin .btn-signup {
+    color: var(--color-pink);
+    background-color: var(--color-white);
+}
+
+.form-signin .btn-signin:hover {
+    color: var(--color-white);
+    background-color: var(--color-pink-hover);
+    border: 1px solid var(--color-pink-hover);
+}
+
+.form-signin .btn-signup:hover {
+    color: var(--color-white);
+    background-color: var(--color-pink-hover);
+    border: 1px solid var(--color-pink-hover);
+}
+
+.content-signin .span-two {
+    font-size: 0.8rem;
+    color: rgb(126, 126, 126);
+    margin: 10px 0 20px 0;
+}
+
+.form-signin .btn-paypal {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: #009cde;
+    border-radius: 5px;
+    padding: 13px 0;
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.form-signin .btn-paypal:hover {
+    background-color: #00b3ff;
+}
+
+.btn-paypal .img-paypal {
+    width: 30%;
+}
+
+.content-image {
+    width: 65%;
+    margin-left: 15px;
+}
+
+.banner-qr-code {
+    width: 100%;
+}
+
+.footer {
+    background-color: var(--color-footer);
+    width: 100%;
+    height: 45px;
+    display: flex;
+}
+
+.footer-links {
+    max-width: 1150px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 0.8rem;
+}
+
+.help-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.help-center .icon-help {
+    width: 45px;
+    height: 45px;
+}
+
+.help-center .icon-help img {
+    width: 100%;
+    height: 100%;
+}
+
+.help-center a {
+    color: var(--color-pink);
+}
+
+.help-center a:hover {
+    color: var(--color-pink-hover);
+}
+
+.forms-of-payments {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.forms-of-payments img {
+    margin-left: 15px;
+}
+
+.forms-of-payments .elo {
+    width: 30px;
+}
+
+.forms-of-payments .hipercard {
+    width: 50px;
+}
+
+.forms-of-payments .mastercard {
+    width: 50px;
+}
+
+.forms-of-payments .paypal {
+    width: 60px;
+}
+
+.forms-of-payments .boleto {
+    width: 40px;
 }

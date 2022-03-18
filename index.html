@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
-</head>
-<body>
-        =>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <a href="#">
+                    <img class="logo-wine" src="./images/wine-white.svg" alt="Logo da WINE">
+                </a>
+                <a href="#">
+                    <img class="logo-security-site" src="./images/site-protected.png" alt="Logo da Site Blindado - Uma segurança para seu sitea invasão.">
+                </a>
+            </nav>
+        </header>
+        <main class="content">
+            <div class="content-signin">
+                <h1>Bem vindo ao maior clube de vinhos do mundo!</h1>
+                <span class="span-one">Antes de continuar, faça seu login.</span>
+                <form class="form-signin">
+                    <div class="form-group">
+                        <label for="email-or-cpf">E-mail ou CPF</label>
+                        <input type="text" name="email-or-cpf" id="email-or-cpf">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <a href="#" class="forget-password-link">Esqueceu sua senha?</a>
+                    <button class="btn-signin" type="submit">Entrar</button>
+                    <button class="btn-signup" type="submit">Faça seu cadastro</button>
+                    <span class="span-two">Ou se preferir, utilize sua conta paypal</span>
+                    <a class="btn-paypal" href="#">
+                        <img class="img-paypal" src="./images/PayPal.svg (1).png" alt="Logo P do paypal">
+                    </a>
+                </form>
+            </div>
+            <div class="content-image">
+                <img class="banner-qr-code" src="https://img.wine.com.br/qrbanners_v2/banner_login.png" alt="Banner de download do APP wine, apontando sua câmera para o QR code">
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-links">
+                <div class="help-center">
+                    <div class="icon-help">
+                        <img src="./images/help.png" alt="Precisa de ajuda? Acesse o link">
+                    </div>
+                    <span>TEM ALGUMA DÚVIDA? ACESSE<a href="#"> NOSSA CENTRAL</a></span>
+                </div>
+                <div class="forms-of-payments">
+                    <span>FORMAS DE PAGAMENTOS</span>
+                    <img class="boleto" src="./images/boleto.png" alt="Boleto">
+                    <img class="elo" src="./images/elo.jpg" alt="Elo">
+                    <img class="hipercard" src="./images/hipercard.png" alt="Hipercard">
+                    <img class="mastercard" src="./images/mastercard.jpg" alt="Mastercard">
+                    <img class="paypal" src="./images/paypal.png" alt="paypal">
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
